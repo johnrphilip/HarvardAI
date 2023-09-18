@@ -163,8 +163,8 @@ class MinesweeperAI():
         Marks a cell as a mine, and updates all knowledge
         to mark that cell as a mine as well.
         """
-        self.mines.add(cell)
-        for sentence in self.knowledge:
+        self.mines.add(cell)  # adds the mine to the self.mines set
+        for sentence in self.knowledge:   # this iterates through the knowledge list with marked mines
             sentence.mark_mine(cell)
 
     def mark_safe(self, cell):
@@ -172,8 +172,8 @@ class MinesweeperAI():
         Marks a cell as safe, and updates all knowledge
         to mark that cell as safe as well.
         """
-        self.safes.add(cell)
-        for sentence in self.knowledge:
+        self.safes.add(cell)  # adds to safes set
+        for sentence in self.knowledge:  # adds to knowledge list
             sentence.mark_safe(cell)
 
     def add_knowledge(self, cell, count):
@@ -248,9 +248,9 @@ class MinesweeperAI():
         This function may use the knowledge in self.mines, self.safes
         and self.moves_made, but should not modify any of those values.
         """
-        for cell in self.safes:
-            if cell not in self.moves_made:
-                return cell
+        for cell in self.safes:    # iterate over the safe_moves set
+            if cell not in self.moves_made: # query if the move has been made
+                return cell   
         return None
 
     def make_random_move(self):
@@ -260,10 +260,10 @@ class MinesweeperAI():
             1) have not already been chosen, and
             2) are not known to be mines
         """
-        valid_moves = [
+        valid_moves = [  # list comprehension that scans the height and width of the board
         (i, j) for i in range(self.height)
         for j in range(self.width)
-        if (i, j) not in self.moves_made and (i, j) not in self.mines
+        if (i, j) not in self.moves_made and (i, j) not in self.mines  # queires to make sure it isn't in the mines or hasn't been made
     ]
     
         return random.choice(valid_moves) if valid_moves else None
