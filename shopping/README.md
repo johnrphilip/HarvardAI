@@ -16,11 +16,15 @@ Performance Metrics: Calculated sensitivity (true positive rate) and specificity
 4. Python Programming
 Python Functions: Developed various Python functions to load data, train the model, and evaluate predictions.
 Control Structures: Utilized conditional statements and loops to process data and calculate metrics.
+
 Core Demonstrations
 This project demonstrates the following key concepts:
 
 Machine Learning Workflow: Implementation of a complete machine learning workflow, including data loading, preprocessing, model training, and evaluation.
+
 Predictive Modeling: Creation of a predictive model using the k-NN algorithm to make predictions on unseen data.
+
 Model Evaluation: Assessment of model performance using sensitivity and specificity, providing insights into the model's accuracy in predicting positive and negative outcomes.
+
 Core Learning
 The core learning from this project is understanding how to implement and apply the k-NN algorithm in a real-world scenario, gaining insights into data preprocessing, model training, and evaluation processes in machine learning. This project provides a foundational understanding of building predictive models and evaluating their performance, which is crucial for developing more advanced models and solutions in the future.
