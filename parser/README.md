@@ -22,7 +22,7 @@ To run the code with a sentence from a file:
 python3 parser.py <filename>
 
 
-## Output Samples:
+## Output Samples
 
         S     
    _____|___   
