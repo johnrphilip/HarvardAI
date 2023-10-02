@@ -18,7 +18,7 @@ This project demonstrates the use of the Natural Language Toolkit (NLTK) to pars
 
 ## Usage
 To run the code with a sentence from a file:
-```shell
+shell
 python3 parser.py <filename>
 
 
