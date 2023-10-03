@@ -32,4 +32,6 @@ The reason there are two sections in the markdown is likely because you are expe
 Attention_Layer3_Head1.png
 
 Attention_Layer1_Head11
+![image](https://github.com/johnrphilip/HarvardAI/assets/96958726/003991df-7505-41ee-8a93-c784b4c41772)
+
 
