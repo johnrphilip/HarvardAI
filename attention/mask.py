@@ -47,7 +47,7 @@ def get_mask_token_index(mask_token_id, inputs):
     """
     mask_tensor = tf.where(inputs['input_ids'][0] == mask_token_id)
     if tf.size(mask_tensor) == 0:
-        return None  # Return None if mask_token_id is not in the list
+        return None  # Return None if mask_token_id not in the list
     return mask_tensor[0][0].numpy()
 
 
@@ -78,7 +78,7 @@ def visualize_attentions(tokens, attentions):
                 i + 1,
                 j + 1,
                 tokens,
-                attentions[i][0][j]
+                attentions[i][0][j] 
             )
 
 
@@ -134,3 +134,7 @@ def generate_diagram(layer_number, head_number, tokens, attention_weights):
 
 if __name__ == "__main__":
     main()
+
+
+ # Sentence 1: The dog and the [MASK] played together in the yard.
+ # Sentence 2 used: The [MASK] and the dog played outside in the yard.
