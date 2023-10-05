@@ -3,7 +3,7 @@
 
 # Sentence: The dog and the [MASK] played together in the yard. 
 - Looking at a sentence with a compound subject
-- It's interesting the first layer is very noisy with lots of shades all over, compared to the early patterns detected with the sample sentences. 
+- It's interesting the first layer is very noisy, with lots of shades all over, compared to the early patterns detected with the sample sentences. 
 
 ## Layer 1, Head 11
 
@@ -11,7 +11,7 @@
 
 ### This image seems to be paying attention to the article noun pair:
 - (the -> dog)
-### While also looking at the confusing verb adverb relationship of:
+### While also looking at the confusing verb-adverb relationship of:
 - (played -> together)
 
 
@@ -20,7 +20,7 @@
 
 ### Still not paying attention to the noun-verb relationship fully (lighter shade) but attention again placed on:
 - article -> noun pattern repeating attention but now with (the [MASK])
-- still perhaps trying to figure out the noun-verb pattern and showing more attention again on the
+- still perhaps trying to figure out the noun-verb pattern and showing more attention again to the
 - verb -> adjective (played -> together)
 
 
@@ -29,81 +29,39 @@
 
 ### Looking at reverse relationships (the word before)
 - Seems to really be coming along with understanding "the" relationships:
-- Strong colour with (the - [CLS]
+- Strong colour with (the - [CLS]) indicating that 'the' has caught the attention of the special classificaiton token. (and -> the) has strong attention as well along with (the - in)
 
 
+## Layer 3, Head 1
+<img width="711" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/495c684f-16f4-4df6-bfcb-368e46679bc4">
+
+### Here a pattern seems to have been identified, with a clear diagonal line of attention. Similar diagonal attention bars found at L3.H10, 
+
+## Layer 3, Head 7
+<img width="725" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/00ab237e-2399-446e-bd17-34e9c063dd0a">
+
+- The model seems to be paying attention to the words themselves with lots of noise all over. This may be looking at larger/broader contexts of meaning for the words:
+- (dog -> dog), (played -> played), (in -> in)
 
 
+## Layer 4, Head 10
+<img width="708" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/ec1cf538-1c76-4b83-a284-df8fab9ff8ab">
+
+- Again strong attention placed on determinant -> noun patterns. It still may be confusing/weighing how played together works. I still haven't seen a focus between dog and played or mask and played. 
 
 
+## Layer 10, Head 5
+<img width="656" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/4ff24d2c-b34e-4e4c-a6ea-7be17971d83e">
+## Attention may have revealed the compound subject pattern here. A similar focus on only this pattern was found in L10.H7, L11.H6, 
+- [MASK -> dog]
+
+## Layer 11, Head 12
+<img width="704" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/9020e5ac-9988-4ebc-9e06-ef43845318d2">
+
+Following the MASK-dog attention a lot of attention heads start looking at patterns with "played". Similar vertical attention bars under played found in L11.H7, L11.H11
 
 
-### Later 1, Head 11
-- (up -> picked), (from -> [MASK]), 
-  
-- <img width="610" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/fd1c33f3-b38b-4594-9c1d-f474f422f8a3">
+# Final Thoughts
 
-
-
-
-## This layer seems to demonstrate looking at relationships of the word following the focus word:
-
-- ("." -> [SEP]), (picked -> up), (the -> table)
-### Layer 1, Head 11
-Attention_Layer1_Head11
-![image](https://github.com/johnrphilip/HarvardAI/assets/96958726/003991df-7505-41ee-8a93-c784b4c41772)
-
-#### Punctuation and [SEP}
-- In this image you can see attention patterns between Punctuation "." and [SEP].
-- The model may be using boundary and structural information to predict the mask.
-
-
-#### Phrasal Verb or DO
-- There is attention between "picked" and "up"
-- This recognition may be for the phrasal verb "picked up", or it could be interpreting it as a direct object.
-
-#### Article-Noun Pair
-- Here you can see attention being placed between the and article and a noun
-- This recognition may be important for ultimately understanding the mask which works within an article noun relationship. 
-
-## This layer seems to be looking at the relationship of words before the focus word:
-
-### Later 1, Head 3
-- (up -> picked), (from -> [MASK]), 
-  
-- <img width="610" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/fd1c33f3-b38b-4594-9c1d-f474f422f8a3">
-
-#### Phrasal Verb or DO  (up -> picked)
-- Similar as above but perhaps looking backwards within the phrasal verb relationship
-
-#### Adjective Prepositional Phrase
-- Here the attention could be looking at the start of the preposition looking back at the noun it modifies
-
-
-
-
-TODO
-
-Example Sentences:
-- TODO
-- TODO
-
-## Layer TODO, Head TODO
-
-TODO
-
-Example Sentences:
-- TODO
-- TODO
-
-
-
-
-[Title](<Then I picked up a [MASK] from the table.>)
-
-Attention_Layer3_Head1.png
-
-Attention_Layer1_Head11
-![image](https://github.com/johnrphilip/HarvardAI/assets/96958726/003991df-7505-41ee-8a93-c784b4c41772)
-
+While recognizing that attention heads are noisy and somewhat elusive from human interpretation, I am wondering if BERT never fully detected the pattern between the compound subject and the verb, as I didn't see any distinct focus colours between them (perhaps because it was a weird compound subject and verb-adverb (played together). My analysis does discuss patterns shown specifically between the two subjects, demonstrating article-noun attention, and a lot of attention around the verb-adverb played together. 
 
