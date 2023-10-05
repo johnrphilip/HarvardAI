@@ -63,5 +63,11 @@ Following the MASK-dog attention a lot of attention heads start looking at patte
 
 # Final Thoughts
 
-While recognizing that attention heads are noisy and somewhat elusive from human interpretation, I am wondering if BERT never fully detected the pattern between the compound subject and the verb, as I didn't see any distinct focus colours between them (perhaps because it was a weird compound subject and verb-adverb (played together). My analysis does discuss patterns shown specifically between the two subjects, demonstrating article-noun attention, and a lot of attention around the verb-adverb played together. 
+While recognizing that attention heads are noisy and somewhat elusive from human interpretation, I am wondering if BERT had challenges weighing the pattern between the compound subject and the verb, as I didn't see any distinct focus colours between them (perhaps because it was a weird compound subject and verb-adverb relationship. 
+My analysis discusses patterns specifically between the two subjects (dog - [MASK], demonstrating article-noun attention (the-dog, the-[MASK]), and a lot of attention around the verb-adverb (played-together). 
+
+I ran the model through the sentence with an easier verb and found more attention patterns between the [MASK] and played. 
+
+<img width="681" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/f7bc6823-b4ae-4e39-914e-f41ac85f24b9">
+
 
