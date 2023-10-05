@@ -57,7 +57,7 @@
 ## Layer 11, Head 12
 <img width="704" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/9020e5ac-9988-4ebc-9e06-ef43845318d2">
 
-Following the MASK-dog attention, a lot of attention heads start looking at patterns with "played". Similar vertical attention bars under played found in L11.H7, L11.H11
+Following the MASK-dog attention, a lot of attention heads start looking at patterns with "played". Similar vertical attention bars under played found in L11.H7, L11.H11.
 
 
 # Final Thoughts
@@ -70,3 +70,12 @@ I ran the model through the sentence with an easier verb and found more attentio
 <img width="681" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/f7bc6823-b4ae-4e39-914e-f41ac85f24b9">
 
 
+
+# Model output: Text: The dog and the [MASK] played together in the yard.
+All PyTorch model weights were used when initializing TFBertForMaskedLM.
+
+All the weights of TFBertForMaskedLM were initialized from the PyTorch model.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFBertForMaskedLM for predictions without further training.
+The dog and the cat played together in the yard.
+The dog and the dog played together in the yard.
+The dog and the bear played together in the yard.
