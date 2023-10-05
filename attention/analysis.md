@@ -17,7 +17,7 @@
 ## Layer 2, Head 2
 <img width="708" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/06cbaba2-229b-494c-8f57-1dadea0b0218">
 
-### Still not paying attention to the noun-verb relationship fully (lighter shade) but attention again placed on:
+### Still not paying as much attention to the noun-verb relationship as other relationships (lighter shade). Strongest attention placed on:
 - article -> noun pattern repeating attention but now with (the [MASK])
 - still perhaps trying to figure out the noun-verb pattern and showing more attention again to the
 - verb -> adjective (played -> together)
@@ -28,13 +28,13 @@
 
 ### Looking at reverse relationships (the word before)
 - Seems to really be coming along with understanding "the" relationships:
-- Strong colour with (the - [CLS]) indicating that 'the' has caught the attention of the special classificaiton token. (and -> the) has strong attention as well along with (the - in)
+- Strong colour with (the - [CLS]) indicating that 'the' has caught the attention of the special classification token. (and -> the) has strong attention as well along with (the - in)
 
 
 ## Layer 3, Head 1
 <img width="711" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/495c684f-16f4-4df6-bfcb-368e46679bc4">
 
-### Here a pattern seems to have been identified, with a clear diagonal line of attention. Similar diagonal attention bars found at L3.H10, 
+### Here, a pattern seems to have been identified, with a clear diagonal line of attention. Similar diagonal attention bars were found at L3.H10, 
 
 ## Layer 3, Head 7
 <img width="725" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/00ab237e-2399-446e-bd17-34e9c063dd0a">
@@ -46,7 +46,7 @@
 ## Layer 4, Head 10
 <img width="708" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/ec1cf538-1c76-4b83-a284-df8fab9ff8ab">
 
-- Again strong attention placed on determinant -> noun patterns. It still may be confusing/weighing how played together works. I still haven't seen a focus between dog and played or mask and played. 
+- Again, strong attention is placed on determinant -> noun patterns. It still may be confusing/weighing how played together works. I still haven't seen a focus between dog and played or mask and played. 
 
 
 ## Layer 10, Head 5
@@ -57,7 +57,7 @@
 ## Layer 11, Head 12
 <img width="704" alt="image" src="https://github.com/johnrphilip/HarvardAI/assets/96958726/9020e5ac-9988-4ebc-9e06-ef43845318d2">
 
-Following the MASK-dog attention a lot of attention heads start looking at patterns with "played". Similar vertical attention bars under played found in L11.H7, L11.H11
+Following the MASK-dog attention, a lot of attention heads start looking at patterns with "played". Similar vertical attention bars under played found in L11.H7, L11.H11
 
 
 # Final Thoughts
