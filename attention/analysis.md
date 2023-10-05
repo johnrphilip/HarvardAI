@@ -3,7 +3,6 @@
 
 # Sentence: The dog and the [MASK] played together in the yard. 
 - Looking at a sentence with a compound subject
-- It's interesting the first layer is very noisy, with lots of shades all over, compared to the early patterns detected with the sample sentences. 
 
 ## Layer 1, Head 11
 
