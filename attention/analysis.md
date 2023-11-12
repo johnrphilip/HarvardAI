@@ -74,8 +74,3 @@ I ran the model through the sentence with an easier verb and found more attentio
 # Model output: Text: The dog and the [MASK] played together in the yard.
 All PyTorch model weights were used when initializing TFBertForMaskedLM.
 
-All the weights of TFBertForMaskedLM were initialized from the PyTorch model.
-If your task is similar to the task the model of the checkpoint was trained on, you can already use TFBertForMaskedLM for predictions without further training.
-The dog and the cat played together in the yard.
-The dog and the dog played together in the yard.
-The dog and the bear played together in the yard.
